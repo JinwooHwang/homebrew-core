@@ -1,9 +1,9 @@
 class Spidermonkey < Formula
   desc "JavaScript-C Engine"
   homepage "https://spidermonkey.dev"
-  url "https://archive.mozilla.org/pub/firefox/releases/128.14.0esr/source/firefox-128.14.0esr.source.tar.xz"
-  version "128.14.0"
-  sha256 "93b9ef6229f41cb22ff109b95bbf61a78395a0fe4b870192eeca22947cb09a53"
+  url "https://archive.mozilla.org/pub/firefox/releases/140.3.0esr/source/firefox-140.3.0esr.source.tar.xz"
+  version "140.3.0"
+  sha256 "efc6eb3c93756311bd2f9db3796c0bbee6e3f182975d857284168b3dec672316"
   license "MPL-2.0"
   head "https://hg.mozilla.org/mozilla-central", using: :hg
 
@@ -57,10 +57,6 @@ class Spidermonkey < Formula
   end
 
   def install
-    # Workaround for ICU 76+
-    # Issue ref: https://bugzilla.mozilla.org/show_bug.cgi?id=1927380
-    inreplace "js/moz.configure", '"icu-i18n >= 73.1"', '"icu-i18n >= 73.1 icu-uc"'
-
     ENV.runtime_cpu_detection
 
     if OS.mac?
