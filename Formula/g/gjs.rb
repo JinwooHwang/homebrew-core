@@ -1,8 +1,8 @@
 class Gjs < Formula
   desc "JavaScript Bindings for GNOME"
   homepage "https://gitlab.gnome.org/GNOME/gjs/wikis/Home"
-  url "https://download.gnome.org/sources/gjs/1.82/gjs-1.82.1.tar.xz"
-  sha256 "fb39aa5636576de0e5a1171f56a1a5825e2bd1a69972fb120ba78bd109b5693c"
+  url "https://download.gnome.org/sources/gjs/1.86/gjs-1.86.0.tar.xz"
+  sha256 "63448f7a57804d4c2a8d0c7f5e90e224d04d4eb2d560142c076c65a8eda00799"
   license all_of: ["LGPL-2.0-or-later", "MIT"]
   head "https://gitlab.gnome.org/GNOME/gjs.git", branch: "master"
 
